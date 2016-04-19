@@ -1,0 +1,17 @@
+{
+  "name": "coffeenotes",
+  "version": "1.0.0",
+  "description": "Keep track of the coffee you want to remember and/or never meet again",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "coffee"
+  ],
+  "author": "Nicholas Jakubowski",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
+  }
+}
