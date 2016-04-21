@@ -1,1 +1,6 @@
 node_modules
+public/bundle.js
+
+# OSX
+#
+.DS_Store
