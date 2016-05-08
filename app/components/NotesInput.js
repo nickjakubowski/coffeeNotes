@@ -8,13 +8,16 @@ var NotesInput = React.createClass({
       text: "hello"
     }
   },
+  update(e) {
+    this.setState({text: e.target.value})
+  },
 
   render: function() {
     return (
       <div className="input-container">
       <div className="coffee-add">
-        <input type="text" placeholder="Add a note for a new coffee" value=""/>
-        <input type="button" value="+add" onClick/>
+        <input type="text" placeholder="Add a note for a new coffee" onChange={this.update.bind(this)}/>
+        <input type="button" value="+add" />
         <p>{this.state.text}</p>
       </div>
       </div>
