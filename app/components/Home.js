@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-var Home = React.createClass({
-  render: function(){
+class Home extends Component {
+  render() {
     return(
     <div className="coffee-welcome">
     Welcome to CoffeeNotes!
     </div>
     )
   }
-});
+};
 
-module.export = Home;
+export default Home;

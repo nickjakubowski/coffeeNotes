@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 
 module.exports = {
+  devtool: 'inline-source-map',
   entry: './app/App.js',
   output: {
     path: "./public",

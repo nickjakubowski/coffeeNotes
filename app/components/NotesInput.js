@@ -1,18 +1,22 @@
-var React = require('react');
-var Router = require('react-router')
+import React, { Component } from 'react';
+import Router from 'react-router';
+import { render } from 'react-dom';
+import NotesDisplay from 'NotesDisplay';
 
-var NotesInput = React.createClass({
+class NotesInput extends Component {
 
-  getInitialState: function() {
-    return {
+  constructor() {
+    super();
+    this.state = {
       text: "hello"
     }
-  },
+  }
+
   update(e) {
     this.setState({text: e.target.value})
-  },
+  }
 
-  render: function() {
+  render() {
     return (
       <div className="input-container">
       <div className="coffee-add">
@@ -23,6 +27,6 @@ var NotesInput = React.createClass({
       </div>
       )
   }
-});
+}
 
-module.exports = NotesInput;
+export default NotesInput;
